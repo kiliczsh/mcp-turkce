@@ -12,7 +12,7 @@ const turkishDictAPI = new TurkishDictionaryAPI();
 // Create MCP Server
 const server = new McpServer({
   name: 'TDK Turkish Dictionary',
-  version: '1.0.2',
+  version: '1.0.3',
   description: 'Access Turkish Language Foundation dictionaries, including the main Turkish dictionary, etymology, dialects, and specialized terminology.'
 });
 
@@ -187,7 +187,6 @@ server.tool("searchVeterinary",
 async function startServer() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.log('Turkish Dictionary MCP Server is running');
 }
 
 startServer().catch(error => {
