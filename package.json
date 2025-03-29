@@ -1,6 +1,6 @@
 {
   "name": "mcp-turkce",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "build/index.js",
   "private": false,
   "type": "module",
@@ -39,10 +39,10 @@
   "homepage": "https://github.com/kiliczsh/mcp-turkce",
   "devDependencies": {
     "@modelcontextprotocol/inspector": "^0.7.0",
+    "@modelcontextprotocol/sdk": "^1.8.0",
     "ts-node": "^10.9.2"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.8.0",
     "@types/node": "^22.13.14",
     "typescript": "^5.8.2",
     "zod": "^3.24.2"
