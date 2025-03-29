@@ -1,0 +1,50 @@
+{
+  "name": "mcp-turkce",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "private": false,
+  "type": "module",
+  "bin": {
+    "mcp-turkce": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"try { require('fs').chmodSync('build/index.js', '755'); } catch (e) { console.error('Could not chmod file:', e.message); }\"",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js",
+    "test": "tsc && node build/test.js"
+  },
+  "keywords": [
+    "türkçe",
+    "turkish",
+    "language",
+    "model-context-protocol",
+    "mcp",
+    "api",
+    "nlp",
+    "turkish-language"
+  ],
+  "author": "kiliczsh <muhammeddkilicc@gmail.com>",
+  "license": "MIT",
+  "description": "Model Context Protocol Server for Turkish Language Foundation API",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kiliczsh/mcp-turkce"
+  },
+  "homepage": "https://github.com/kiliczsh/mcp-turkce",
+  "devDependencies": {
+    "@modelcontextprotocol/inspector": "^0.7.0",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "@types/node": "^22.13.14",
+    "typescript": "^5.8.2",
+    "zod": "^3.24.2"
+  }
+}
