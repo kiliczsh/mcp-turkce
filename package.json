@@ -1,11 +1,10 @@
 {
   "name": "mcp-turkce",
   "version": "1.0.1",
-  "main": "build/index.js",
   "private": false,
   "type": "module",
   "bin": {
-    "mcp-turkce": "./build/index.js"
+    "mcp-turkce": "build/index.js"
   },
   "files": [
     "build"
