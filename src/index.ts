@@ -12,7 +12,7 @@ const turkishDictAPI = new TurkishDictionaryAPI();
 // Create MCP Server
 const server = new McpServer({
   name: 'TDK Turkish Dictionary',
-  version: '1.0.0',
+  version: '1.0.2',
   description: 'Access Turkish Language Foundation dictionaries, including the main Turkish dictionary, etymology, dialects, and specialized terminology.'
 });
 
