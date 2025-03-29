@@ -10,7 +10,8 @@
     "build"
   ],
   "scripts": {
-    "build": "tsc && node -e \"try { require('fs').chmodSync('build/index.js', '755'); } catch (e) { console.error('Could not chmod file:', e.message); }\"",
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "prepare": "npm run build",
     "watch": "tsc --watch",
     "inspector": "npx @modelcontextprotocol/inspector build/index.js",
     "test": "tsc && node build/test.js"
@@ -37,13 +38,13 @@
   },
   "homepage": "https://github.com/kiliczsh/mcp-turkce",
   "devDependencies": {
-    "@modelcontextprotocol/inspector": "^0.7.0",
-    "@modelcontextprotocol/sdk": "^1.8.0",
-    "ts-node": "^10.9.2",
-    "zod": "^3.24.2"
+    "@modelcontextprotocol/inspector": "^0.7.0"
   },
   "dependencies": {
     "@types/node": "^22.13.14",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.2",
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "zod": "^3.24.2",
+    "ts-node": "^10.9.2"
   }
 }
